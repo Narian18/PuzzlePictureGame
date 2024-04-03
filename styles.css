@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.board-square {
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+#top-row {
+    flex-grow: 1;
+}
+
+#puzzle-game {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#game-board {
+    flex-grow: 8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: min-content;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+#puzzle-pieces {
+    flex-grow: 2;
+    padding: 1rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#piece-area {
+    height: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
